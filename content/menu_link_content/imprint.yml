@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 6cc0c0c0-a308-4be8-9bda-98a3779e377a
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    efee504b-f03d-4e80-8b1c-a79f0526df7a: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Imprint
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      target_uuid: efee504b-f03d-4e80-8b1c-a79f0526df7a
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
