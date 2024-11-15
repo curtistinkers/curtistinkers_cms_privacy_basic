@@ -35,6 +35,6 @@ default:
       langcode: en
   body:
     -
-      value: '<h2>This content needs to be edited before publishing</h2><p>Please note that your sites requires a privacy statement.</p>'
+      value: '<h2>This content needs to be edited before publishing</h2><p>Please note that your site requires a privacy statement.</p>'
       format: basic_html
       summary: ''
