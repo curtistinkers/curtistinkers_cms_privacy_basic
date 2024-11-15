@@ -5,6 +5,7 @@
     "version": "dev-main",
     "require": {
         "drupal/core": ">=10.3",
-        "drupal/klaro": "3.x-dev"
+        "drupal/klaro": "3.x-dev",
+        "drupal/menu_link_attributes": "^1.5"
     }
 }
