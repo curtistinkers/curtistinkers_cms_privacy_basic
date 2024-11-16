@@ -33,8 +33,10 @@ default:
     -
       alias: /privacy-policy
       langcode: en
+  field_description:
+    -
+      value: 'Nothing here yet.'
   body:
     -
       value: '<h2>This content needs to be edited before publishing</h2><p>Please note that your site requires a privacy statement.</p>'
       format: basic_html
-      summary: ''

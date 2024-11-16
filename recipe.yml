@@ -2,8 +2,7 @@ name: Basic Privacy
 description: Sets up a site with basic privacy features like consent management and remote content blocking.
 type: Drupal CMS
 recipes:
-  - core/recipes/basic_html_format_editor
-  - core/recipes/page_content_type
+  - drupal_cms_page
 install:
   - klaro
   - menu_link_attributes
