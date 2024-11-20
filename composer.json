@@ -6,7 +6,7 @@
     "require": {
         "drupal/core": ">=10.3",
         "drupal/drupal_cms_page": "*",
-        "drupal/klaro": "3.x-dev",
+        "drupal/klaro": "^3-rc10",
         "drupal/menu_link_attributes": "^1.5"
     }
 }
