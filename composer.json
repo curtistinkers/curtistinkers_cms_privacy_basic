@@ -1,7 +1,6 @@
 {
     "name": "drupal/drupal_cms_privacy_basic",
     "description": "Sets up a site with basic privacy features like consent management and remote content blocking.",
-    "version": "dev-main",
     "type": "drupal-recipe",
     "license": ["GPL-2.0-or-later"],
     "require": {
