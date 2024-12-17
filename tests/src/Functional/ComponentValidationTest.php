@@ -36,9 +36,12 @@ class ComponentValidationTest extends BrowserTestBase {
     // The privacy links should be visible to anonymous users in the footer.
     $this->drupalPlaceBlock('system_menu_block:footer', ['label' => 'Footer']);
     $this->drupalGet('<front>');
-    $footer_menu = 'nav > h2:contains("Footer") + ul';
-    $assert_session = $this->assertSession();
-    $assert_session->elementNotExists('css', $footer_menu);
+    $footer_menu = $this->assertSession()
+      ->elementExists('css', 'nav > h2:contains("Footer") + ul');
+    // The privacy links should be visible to anonymous users in the footer, but
+    // the privacy policy is unpublished by default, so it shouldn't appear.
+    $this->assertTrue($footer_menu->hasLink('My privacy settings'));
+    $this->assertFalse($footer_menu->hasLink('Privacy policy'));
 
     // Publish the privacy policy and ensure it shows up in the footer.
     $this->container->get(EntityRepositoryInterface::class)
@@ -46,8 +49,6 @@ class ComponentValidationTest extends BrowserTestBase {
       ?->setPublished()
       ->save();
     $this->getSession()->reload();
-    $footer_menu = $assert_session->elementExists('css', $footer_menu);
-    $this->assertFalse($footer_menu->hasLink('My privacy settings'));
     $this->assertTrue($footer_menu->hasLink('Privacy policy'));
   }
 
