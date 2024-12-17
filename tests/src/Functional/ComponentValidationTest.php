@@ -44,10 +44,11 @@ class ComponentValidationTest extends BrowserTestBase {
     $this->assertFalse($footer_menu->hasLink('Privacy policy'));
 
     // Publish the privacy policy and ensure it shows up in the footer.
-    $this->container->get(EntityRepositoryInterface::class)
-      ->loadEntityByUuid('node', '00d105b3-6f05-40c6-a289-3dd61c89480e')
-      ?->setPublished()
-      ->save();
+    $privacy_policy = $this->container->get(EntityRepositoryInterface::class)
+      ->loadEntityByUuid('node', '00d105b3-6f05-40c6-a289-3dd61c89480e');
+    $this->assertIsObject($privacy_policy);
+    $privacy_policy->moderation_state = 'published';
+    $privacy_policy->save();
     $this->getSession()->reload();
     $this->assertTrue($footer_menu->hasLink('Privacy policy'));
   }
