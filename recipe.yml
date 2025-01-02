@@ -1,5 +1,5 @@
 name: Basic Privacy
-description: Sets up a site with basic privacy features like consent management and remote content blocking.
+description: Adds basic privacy features such as consent management and remote content blocking.
 type: Drupal CMS
 recipes:
   - drupal_cms_page
