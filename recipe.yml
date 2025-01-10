@@ -23,7 +23,6 @@ config:
       simpleConfigUpdate:
         auto_decorate_final_html: true
         library.group_by_purpose: true
-        library.cookie_expires_after_days: 30
     klaro.texts:
       simpleConfigUpdate:
         consentModal.privacyPolicy.url: 'internal:/privacy-policy'

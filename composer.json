@@ -8,7 +8,7 @@
         "drupal/core": ">=10.4",
         "drupal/eca": "^2.1",
         "drupal/drupal_cms_page": "1.x-dev",
-        "drupal/klaro": "^3-rc16",
+        "drupal/klaro": "^3",
         "drupal/menu_link_attributes": "^1.5"
     }
 }
