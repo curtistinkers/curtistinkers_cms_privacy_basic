@@ -9,9 +9,11 @@ install:
   - eca_config
   - eca_content
   - eca_user
+  - eca_ui
   - klaro
   - menu_link_attributes
   - menu_link_content
+  - modeler_api
 config:
   strict: false
   import:
