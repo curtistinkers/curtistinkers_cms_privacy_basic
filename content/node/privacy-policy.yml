@@ -17,9 +17,6 @@ default:
   title:
     -
       value: 'Privacy policy'
-  created:
-    -
-      value: 1729164335
   promote:
     -
       value: false
