@@ -42,7 +42,7 @@ class ComponentValidationTest extends BrowserTestBase {
     $assert_session->elementNotExists('css', $footer_menu);
 
     // Publish the privacy policy and ensure it shows up in the footer.
-    $privacy_policy = $this->container->get(EntityRepositoryInterface::class)
+    $privacy_policy = \Drupal::service(EntityRepositoryInterface::class)
       ->loadEntityByUuid('node', '00d105b3-6f05-40c6-a289-3dd61c89480e');
     $this->assertIsObject($privacy_policy);
     $privacy_policy->moderation_state = 'published';
