@@ -3,7 +3,7 @@
 Adds basic privacy features such as consent management and remote content blocking.
 
 ## Recipes Applied
-- [Drupal CMS Basic page](https://www.drupal.org/project/drupal_cms_page)
+- [Drupal CMS Content Basics](https://www.drupal.org/project/drupal_cms_content_type_base)
 
 ## Modules and Themes Installed
 - [BPMN.iO Modeler](https://www.drupal.org/project/bpmn_io)
