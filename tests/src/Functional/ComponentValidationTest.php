@@ -9,9 +9,12 @@ use Drupal\FunctionalTests\Core\Recipe\RecipeTestTrait;
 use Drupal\Tests\BrowserTestBase;
 use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\Attributes\IgnoreDeprecations;
+use PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses;
 
 #[Group('drupal_cms_privacy_basic')]
+#[Group('drupal_cms')]
 #[IgnoreDeprecations]
+#[RunTestsInSeparateProcesses]
 class ComponentValidationTest extends BrowserTestBase {
 
   use RecipeTestTrait;
