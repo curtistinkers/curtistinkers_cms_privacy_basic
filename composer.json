@@ -1,5 +1,5 @@
 {
-    "name": "drupal/drupal_cms_privacy_basic",
+    "name": "curtistinkers/curtistinkers_cms_privacy_basic",
     "description": "Adds basic privacy features such as consent management and remote content blocking.",
     "type": "drupal-recipe",
     "license": ["GPL-2.0-or-later"],

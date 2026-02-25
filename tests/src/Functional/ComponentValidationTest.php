@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\Tests\drupal_cms_privacy_basic\Functional;
+namespace Drupal\Tests\curtistinkers_cms_privacy_basic\Functional;
 
 use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\FunctionalTests\Core\Recipe\RecipeTestTrait;
@@ -11,7 +11,7 @@ use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\Attributes\IgnoreDeprecations;
 use PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses;
 
-#[Group('drupal_cms_privacy_basic')]
+#[Group('curtistinkers_cms_privacy_basic')]
 #[Group('drupal_cms')]
 #[IgnoreDeprecations]
 #[RunTestsInSeparateProcesses]

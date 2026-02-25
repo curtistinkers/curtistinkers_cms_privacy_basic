@@ -17,7 +17,7 @@ Adds basic privacy features such as consent management and remote content blocki
 This project is part of [Drupal CMS](https://drupal.org/project/cms). If you're not using Drupal CMS, you can still use this recipe in your own project. Add it with the following Composer command:
 
 ```
-composer require drupal/drupal_cms_privacy_basic
+composer require curtistinkers/curtistinkers_cms_privacy_basic
 ```
 
 ## Bugs and Feedback
