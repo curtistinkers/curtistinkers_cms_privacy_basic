@@ -12,7 +12,7 @@ use PHPUnit\Framework\Attributes\IgnoreDeprecations;
 use PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses;
 
 #[Group('curtistinkers_cms_privacy_basic')]
-#[Group('drupal_cms')]
+#[Group('curtistinkers_cms')]
 #[IgnoreDeprecations]
 #[RunTestsInSeparateProcesses]
 class ComponentValidationTest extends BrowserTestBase {
