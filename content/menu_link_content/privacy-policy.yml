@@ -20,7 +20,15 @@ default:
     -
       target_uuid: 00d105b3-6f05-40c6-a289-3dd61c89480e
       title: ''
-      options: {  }
+      options:
+        icon:
+          target_id: 'phosphor:shield-check'
+          settings:
+            phosphor:
+              size: '32'
+              color: '#000000'
+              alt: 'Privacy policy'
+        icon_display: before
   external:
     -
       value: false
